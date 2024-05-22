@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 class="my-4">Restaurants</h1>
+
+  <div class="row">
+    <ul class="list-group col-12">
+      <% @restaurants.each do |restaurant| %>
+        <li class="list-group-item"><%= link_to restaurant.name, restaurant_path(restaurant.id) %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
